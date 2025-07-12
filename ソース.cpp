@@ -17,7 +17,7 @@ int main() {
 
 	std::cout << "Wellcome to Delta Parcent Method Structuer." << std::endl;
 
-	// Initialize the target percentage value
+	// Initialize the manage Target remain name.
 	std::string Target;
 
 	std::stack<int> s;
@@ -39,7 +39,7 @@ int main() {
 
 	E++;
 
-	std::cout << "Stack initialized with value for Adder consecesed: " << Target << std::endl;
+	std::cout << "Stack initialized with value for Consecesed: " << Target << std::endl;
 	
 
 	do {
@@ -69,6 +69,10 @@ int main() {
 			E++;
 		} else if (A == 2) {
 			if (!s.empty()) {
+				//Before popping, check if the stack has enough elements.
+
+				std::cout << "Popping values from the stack..." <<V<< std::endl;
+
 				D = s.top();
 				s.pop();
 				std::cout << "Popped " << D << " from the stack this is end." << std::endl;
